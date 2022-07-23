@@ -1,3 +1,66 @@
+@import "https://fonts.googleapis.com/css2? семья = DM+моно &family= Inter & display=swap";
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+body {
+  color: #000;
+  font-family: Inter, DM-mono, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+}
+
+header {
+  background-color: #000;
+}
+
+header .logo {
+  gap: 40px;
+  display: flex;
+}
+
+header nav {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+header nav a {
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: DM Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+header nav a:first-child {
+  white-space: nowrap;
+}
+
+header .networks {
+  gap: 12px;
+  display: flex;
+}
+
+header .networks a {
+  background-color: #fff;
+  padding: 8px;
+}
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

@@ -1,0 +1,13 @@
+@mixin background {
+    background-color: #000000;    
+}
+
+
+@mixin text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}

@@ -1,0 +1,40 @@
+@media all and (max-width:768px) {
+    
+    header{
+        .container{
+            gap: 20px;
+        }
+        .logo {
+            gap: 20px;
+        } 
+    }
+   
+}
+
+@media all and (max-width:650px){
+    header {
+        .container {
+            justify-content: center;
+        }
+        .logo {
+            justify-content: center;
+        }
+        .networks {
+            display: none;
+        }    
+    }
+}
+
+
+@media all and (max-width:480px) {
+    header {      
+        .logo {
+            align-items:center;
+        }
+        nav {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+

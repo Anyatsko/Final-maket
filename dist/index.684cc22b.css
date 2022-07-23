@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+  header .container, header .logo {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  header .container, header .logo {
+    justify-content: center;
+  }
+
+  header .networks {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    align-items: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.684cc22b.css.map */
