@@ -4,5 +4,13 @@
     font-style: normal;
     font-weight: 400;
     color: white;
+}
 
+@mixin title {
+    font-family: 'Audiowide', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
 }

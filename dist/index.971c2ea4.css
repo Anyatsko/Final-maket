@@ -124,4 +124,81 @@ header .networks a {
   line-height: 16px;
 }
 
+.wave {
+  background-color: #000;
+  padding: 110px 0 120px;
+}
+
+.wave .container {
+  max-width: 1160px;
+  justify-content: space-between;
+  gap: 146px;
+  display: flex;
+}
+
+.wave .container .wave-title {
+  padding-top: 7px;
+}
+
+.wave .container h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Audiowide, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.wave .container .subtitle {
+  text-transform: uppercase;
+  color: #a8a8a8;
+  margin-bottom: 41px;
+  font-family: Audiowide, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.wave .container .wave-info {
+  max-width: 580px;
+}
+
+.wave .container .wave-info__definition {
+  color: #fff;
+  color: #8dfd1b;
+  border-left: 2px solid #8dfd1b;
+  margin-bottom: 32px;
+  padding-left: 12px;
+  font-family: DM Mono, monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.wave .container .wave-info__descr {
+  color: #fff;
+  margin-bottom: 18px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.wave .container .wave-info button {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border: 1px solid #8dfd1b;
+  padding: 15px 30px;
+  font-family: DM Mono, capitalize;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
 /*# sourceMappingURL=index.971c2ea4.css.map */

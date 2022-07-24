@@ -31,7 +31,7 @@
     align-items: center;
   }
 
-  .promo .container .promo-main_info {
+  .promo .container .promo-info {
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -67,6 +67,28 @@
 
   .promo .container button {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 790px) {
+  .wave {
+    padding: 50px 10px;
+  }
+
+  .wave .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+}
+
+@media (max-width: 680px) {
+  .wave .container {
+    gap: 0;
+  }
+
+  .wave .container img {
+    display: none;
   }
 }
 

@@ -63,7 +63,7 @@ header {
         & a{
             padding: 8px;
             background-color: white;            
-      }
+        }
     }
 }
 
@@ -78,8 +78,7 @@ header {
         overflow: hidden;
         display: flex;
         justify-content: space-around;
-
-       
+        
         h1{
             font-family: 'Audiowide', sans-serif;
             font-style: normal;
@@ -124,11 +123,71 @@ header {
             background-color: #8DFD1B;
             
         }
-
     }
-
 }
 
+// wave
+
+.wave {
+    background-color: black;
+    padding: 110px 0 120px 0;
+
+    .container{
+        max-width: 1160px; 
+        display: flex;
+        justify-content: space-between;  
+        gap: 146px;
+
+        .wave-title{
+            padding-top: 7px;
+        }
+        
+        h2{
+            @include title;
+            color: #ffff;
+        }
+
+        .subtitle {
+            @include title;
+            color: #A8A8A8;
+            margin-bottom: 41px;
+        }
+
+        .wave-info{
+            max-width: 580px;
+            
+
+            &__definition {
+                @include text;
+                font-family: 'DM Mono', monospace;
+                font-size: 21px;
+                line-height: 32px;            
+                color: #8DFD1B;
+                border-left: 2px solid #8DFD1B ;
+                padding-left: 12px;
+                margin-bottom: 32px;
+            }
+    
+            &__descr {
+                @include text; 
+                font-size: 16px;
+                line-height: 26px;     
+                margin-bottom: 18px;
+            }
+
+            button {
+                @include text;
+                font-family: 'DM Mono', capitalize;
+                font-size: 16px;
+                line-height: 16px;
+                text-align: center;
+                padding: 15px 30px;
+                border: 1px solid #8DFD1B;
+                background-color:#000000
+            }
+        }     
+    }
+}
 
 
     
