@@ -201,4 +201,70 @@ header .networks a {
   line-height: 16px;
 }
 
+.line {
+  width: 100%;
+  white-space: nowrap;
+  background-color: #000;
+  display: block;
+  overflow: hidden;
+}
+
+.line span {
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 30%;
+  font-family: Audiowide, sans-serif;
+  font-size: 79px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88px;
+  animation: scroll 5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.artists {
+  background-color: #000;
+  padding: 120px 0 120px 40px;
+}
+
+.artists .container {
+  max-width: 1160px;
+}
+
+.artists .container h2 {
+  display: none;
+}
+
+.artists .container .artists-people {
+  flex-wrap: wrap;
+  gap: 60px;
+  display: flex;
+}
+
+.artists .container .artists-people .arists-people__name {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.artists .container .artists-people .arists-people__name p {
+  color: #fff;
+  font-family: DM Mono, monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 /*# sourceMappingURL=index.971c2ea4.css.map */

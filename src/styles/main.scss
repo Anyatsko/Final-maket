@@ -189,7 +189,70 @@ header {
     }
 }
 
+// running line 
 
+.line {
+    background-color:#000000;
+    display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;    
+}
+
+.line span {
+    @include text;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 79px;
+    line-height: 88px;      
+    text-transform: uppercase;    
+    display: inline-block;
+    padding-left: 30%;
+    animation: scroll 5s infinite linear;
+}
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+} 
+
+// artists
+
+.artists {
+        background-color: #000000;
+        padding: 120px 0 120px 40px;
+
+        .container{        
+        max-width: 1160px;
+        h2 {
+            display: none;
+        }
+
+        .artists-people {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        
+             .arists-people__name {
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                gap: 20px;
+
+                p {
+                    @include text;
+                    font-family: 'DM Mono', monospace;                    
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+       
+    
     
 
     
