@@ -383,4 +383,156 @@ input:checked + label {
   }
 }
 
+.background {
+  min-height: 240px;
+  background-image: url("music.5ed31536.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.roadmap {
+  background-color: #000;
+}
+
+.roadmap .container {
+  max-width: 1160px;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 120px;
+  display: flex;
+  position: relative;
+}
+
+.roadmap .container h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: Audiowide, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.roadmap .container .roadmap-phase {
+  max-width: 540px;
+  border: 2px solid #8dfd1b;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.roadmap .container .roadmap-phase__before {
+  border-bottom: 2px solid #8dfd1b;
+  align-items: center;
+  padding: 12px;
+  display: flex;
+}
+
+.roadmap .container .roadmap-phase__before:before {
+  content: "1";
+  font-style: 40px;
+  background: #8dfd1b;
+  border: 1px solid #8dfd1b;
+  padding: 8px 12px;
+  font-family: DM Mono;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.roadmap .container .roadmap-phase .before_second:before {
+  content: "2";
+  color: #8dfd1b;
+  background: #000;
+  border: 1px solid #8dfd1b;
+}
+
+.roadmap .container .roadmap-phase .before_third:before {
+  content: "3";
+  color: #8dfd1b;
+  background: #000;
+  border: 1px solid #8dfd1b;
+}
+
+.roadmap .container .roadmap-phase-title {
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.roadmap .container .roadmap-phase-title h3 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8dfd1b;
+  font-family: DM Mono;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.roadmap .container .roadmap-phase-title .subtitle {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: DM Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.roadmap .container .roadmap-phase-info {
+  gap: 70px;
+  padding: 30px 12px 12px;
+  display: flex;
+}
+
+.roadmap .container .roadmap-phase-info p {
+  color: #fff;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.roadmap .container .roadmap-phase-info p:nth-child(-n+3) {
+  padding-left: 20px;
+}
+
+.roadmap .container .roadmap-phase-info__text {
+  max-width: 410px;
+}
+
+.roadmap .container .roadmap-phase-info img {
+  height: 130px;
+  width: 129px;
+  border-radius: 8px;
+}
+
+.roadmap .container .separator {
+  height: 40px;
+  width: 2px;
+  background-color: #8dfd1b;
+}
+
+.roadmap .container .circle-1 {
+  position: absolute;
+  top: -110px;
+  left: -110px;
+}
+
+.roadmap .container .circle-2 {
+  position: absolute;
+  transform: translate(50%, 50%);
+}
+
+.roadmap .container .circle-3 {
+  position: absolute;
+  transform: translate(-50%, 135%);
+}
+
 /*# sourceMappingURL=index.971c2ea4.css.map */

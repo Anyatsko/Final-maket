@@ -131,8 +131,6 @@ header {
 .wave {
     background-color: black;
     padding: 120px 40px;
-
-
     .container{
         max-width: 1160px; 
         display: flex;
@@ -270,9 +268,8 @@ header {
         & span {
             color:#fff;
         }   
-}
-        
-        
+    }       
+
         img {
             height: 100%;
         }
@@ -295,37 +292,38 @@ header {
     padding: 0px; 
     margin: 0 auto; 
     position: relative; 
-  } 
+} 
 
-  .inset { 
+.inset { 
     display: none;  
     padding: 15px; 
     background: #222222;
     position: absolute; 
     top: 0; 
     left: 205px; 
-  } 
-  p { 
+}  
+
+p { 
     margin: 0; 
     @include text; 
     font-size: 16px;
     line-height: 26px;     
     margin-bottom: 18px;
-  } 
+} 
 
-  input { 
+input { 
     display: none; 
-  } 
+} 
 
-  label { 
+label { 
     display: block; 
     padding: 15px 15px 25px 15px; 
     color: #fff; 
     background: black; 
     cursor: pointer; 
-  } 
+} 
 
-  input:checked + label { 
+input:checked + label { 
     font-family: 'DM Mono';
 font-style: normal;
 font-weight: 400;
@@ -333,16 +331,18 @@ font-size: 16px;
 line-height: 16px;
 color: #8DFD1B;
 background: #222222;
+} 
 
-  } 
-  #tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { 
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { 
     display: flex;
     gap: 50px
-  } 
-  .inset { 
+} 
+
+.inset { 
     animation: scale 0.7s ease-in-out; 
-  } 
-  @keyframes scale { 
+} 
+
+@keyframes scale { 
     0% { 
     transform: scale(0.9); 
     opacity: 0; 
@@ -355,13 +355,159 @@ background: #222222;
     transform: scale(1); 
     opacity: 1; 
     } 
-  }
+}
     
+.background {
+    min-height: 240px;
+    background-image: url(../img/music.webp);
+    background-position: center;
+   background-attachment: fixed ; 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+   
+// roadmap 
+
+.roadmap {
+    background-color: black;
+        .container {
+        max-width: 1160px;
+        padding: 50px 0 120px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+        h2 {
+            @include title;
+            color: #ffff;
+            text-align: center;
+            margin-bottom: 45px;            
+        }
+
+        
+
+        .roadmap-phase {
+            border: 2px solid #8DFD1B;
+            max-width: 540px;
+            margin-bottom: 45px;
+            margin-top: 45px;
+
+                &__before {   
+                display: flex;
+                align-items:center;
+                padding: 12px;
+                border-bottom: 2px solid #8DFD1B;            
+         }  
+
+            &__before::before {
+                content:'1';
+                background: #8DFD1B;
+                border: 1px solid #8DFD1B;
+                font-style: 40px;
+                font-family: 'DM Mono';
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 28px;
+                padding: 8px 12px;
+            }
+
+             .before_second::before {
+                content:'2';
+                border: 1px solid #8DFD1B;
+                background: black;
+                color:#8DFD1B;
+            }
+
+            .before_third::before {
+                content:'3';
+                border: 1px solid #8DFD1B;
+                background: black;
+                color:#8DFD1B;
+            }
+                &-title {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 25px;
+                    padding-left: 20px;
+
+                    h3 {
+                    font-family: 'DM Mono';
+                    font-weight: 400;
+                    font-size: 8px;
+                    line-height: 12px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #8DFD1B;
+                }
+                .subtitle {
+                    font-family: 'DM Mono';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                }
+
+                &-info{
+                    display: flex;
+                    gap:70px;
+                    padding: 30px 12px 12px 12px;
+
+                    p{
+                        @include text;
+                        font-size: 11px;
+                        line-height: 32px;
+                        margin: 0;
+                    }
+
+                    p:nth-child(-n+3){
+                        padding-left: 20px;
+                    }
+                    &__text {
+                        max-width: 410px;
+                    }
+
+                    img {
+                        border-radius: 8px;
+                        height: 130px;
+                        width: 129px;
+                    }
+                }
+
+                
+            }
+            .separator {
+                background-color: #8DFD1B;
+                height: 40px;
+                width: 2px;
+            }
+
+            .circle-1 {
+                position: absolute;
+                top: -110px;
+                left: -110px
+            }
+
+        .circle-2 {
+            position: absolute;
+            transform: translate(50%, 50%);
+        }
+
+        .circle-3 {
+            position: absolute;
+            transform: translate(-50%, 135%);
+        }
+        }
+    }    
     
 
     
-
     
+
+
+       
    
 
 
