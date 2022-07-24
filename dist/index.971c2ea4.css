@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2? семья = DM+моно &family= Inter & display=swap";
+@import "https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap";
 html {
   width: 100%;
   max-width: 100%;
@@ -7,24 +7,26 @@ html {
 
 body {
   color: #000;
-  font-family: Inter, DM-mono, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   overflow-x: hidden;
 }
 
 .container {
-  max-width: 1160px;
   width: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  gap: 40px;
   margin: 0 auto;
-  padding: 30px 0;
-  display: flex;
 }
 
 header {
   background-color: #000;
+}
+
+header .container {
+  max-width: 1160px;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 0;
+  display: flex;
 }
 
 header .logo {
@@ -40,8 +42,7 @@ header nav {
 
 header nav a {
   color: #fff;
-  letter-spacing: 3px;
-  font-family: DM Mono;
+  font-family: DM Mono, monospace;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -61,6 +62,66 @@ header .networks {
 header .networks a {
   background-color: #fff;
   padding: 8px;
+}
+
+.promo {
+  background-color: #000;
+}
+
+.promo .container {
+  max-width: 1440px;
+  justify-content: space-around;
+  padding: 50px 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.promo .container h1 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 45px;
+  font-family: Audiowide, sans-serif;
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 61px;
+}
+
+.promo .container .descr {
+  color: #fff;
+  max-width: 305px;
+  margin-bottom: 115px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.promo .container .promo-cards {
+  display: flex;
+}
+
+.promo .container .promo-cards .cards:nth-child(2n+1) {
+  filter: opacity(.6);
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.promo .container .promo-cards .cards_purpule {
+  width: 266px;
+  height: 360px;
+  transform: scale(1.5);
+}
+
+.promo .container button {
+  text-align: center;
+  color: #000;
+  background-color: #8dfd1b;
+  padding: 17px 40px;
+  font-family: DM Mono, monospace;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

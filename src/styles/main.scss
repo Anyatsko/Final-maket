@@ -1,41 +1,43 @@
 @import 'mixin.scss';
-@import url('https://fonts.googleapis.com/css2? семья = DM+моно &family= Inter & display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap');
+
+
 
 html{
-
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
 body {
-    font-family: Inter, DM-mono, sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     color: black;
     overflow-x: hidden;
 }
 
 .container {
-    max-width: 1160px;
-    padding: 30px 0;
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
     margin: 0 auto;
     width: 100%;
-    box-sizing: border-box;
 }
 
-header {
-    @include background;
+// header
 
-    
+header {
+    background-color:black;  
+
+    .container {
+        max-width: 1160px;
+        padding: 30px 0;
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
     .logo{
         display: flex;
         gap: 40px;
-
     }
-
 
     nav {
         display: flex;
@@ -45,21 +47,18 @@ header {
         & a{
             text-decoration: none;
             @include text;
-            font-family: 'DM Mono';
+            font-family: 'DM Mono', monospace;
             font-size: 16px;
             line-height: 16px;
-            letter-spacing: 3px;
-
+            
             &:first-child {
                 white-space: nowrap;
-            }
-    
+            }    
         }
     }
-
-    .networks{
+        .networks{
         display: flex;
-        gap: 12px;        
+        gap: 12px;     
     
         & a{
             padding: 8px;
@@ -68,6 +67,67 @@ header {
     }
 }
 
+// promo
+
+.promo {
+    background-color: black;
+
+    .container{
+        max-width: 1440px;
+        padding: 50px 10px; 
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+
+       
+        h1{
+            font-family: 'Audiowide', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 51px;
+            line-height: 61px;
+            text-transform: uppercase;
+            color:white;
+            margin-bottom: 45px;
+        }
+
+        .descr {
+            @include text;
+            font-size: 16px;
+            line-height: 26px;  
+            margin-bottom: 115px; 
+            max-width: 305px;         
+        }
+
+        .promo-cards {
+            display: flex;
+            & .cards:nth-child(odd) {
+                filter: opacity(0.6);  
+                z-index: 1;  
+                margin-top: 40px;            
+            }
+
+            .cards_purpule {
+                    width: 266px;
+                    transform: scale(1.5);    
+                    height: 360px;
+                }
+        }
+
+        button {
+            font-family: 'DM Mono', monospace;
+            line-height: 16px;
+            font-size: 16px;
+            text-align: center;
+            color: #000000;
+            padding: 17px 40px;
+            background-color: #8DFD1B;
+            
+        }
+
+    }
+
+}
 
 
 
