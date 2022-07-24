@@ -149,3 +149,31 @@
     }
     }
 }
+
+// story
+
+@media all and (max-width: 840px) {
+    .story {
+        .container {
+            min-height: 515px;
+
+            img {
+                display: none;
+            }    
+    }
+}
+}
+
+@media all and (max-width: 660px) {
+    .story {
+        .container {
+            min-height: 360px;
+        
+        .inset {
+            max-height: 300px;
+             overflow: scroll;
+             left: 140px;
+        }            
+    }
+}
+}

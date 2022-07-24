@@ -130,7 +130,8 @@ header {
 
 .wave {
     background-color: black;
-    padding: 110px 0 120px 0;
+    padding: 120px 40px;
+
 
     .container{
         max-width: 1160px; 
@@ -252,6 +253,109 @@ header {
     }
 }
        
+// story
+
+.story {
+    background-color: #000000;
+    padding: 120px 40px;
+    
+    .container {
+        min-height: 700px;
+
+        h2 {
+            @include title;
+            color: #A8A8A8;
+            text-align: center;
+            margin-bottom: 60px;
+        & span {
+            color:#fff;
+        }   
+}
+        
+        
+        img {
+            height: 100%;
+        }
+
+        .definition {
+            @include text;
+                font-family: 'DM Mono', monospace;
+                font-size: 21px;
+                line-height: 32px;            
+                color: #8DFD1B;
+                border-left: 2px solid #8DFD1B ;
+                padding-left: 12px;
+                margin-bottom: 32px;
+        }
+    }
+}
+
+.tabs { 
+    max-width: 950px;
+    padding: 0px; 
+    margin: 0 auto; 
+    position: relative; 
+  } 
+
+  .inset { 
+    display: none;  
+    padding: 15px; 
+    background: #222222;
+    position: absolute; 
+    top: 0; 
+    left: 205px; 
+  } 
+  p { 
+    margin: 0; 
+    @include text; 
+    font-size: 16px;
+    line-height: 26px;     
+    margin-bottom: 18px;
+  } 
+
+  input { 
+    display: none; 
+  } 
+
+  label { 
+    display: block; 
+    padding: 15px 15px 25px 15px; 
+    color: #fff; 
+    background: black; 
+    cursor: pointer; 
+  } 
+
+  input:checked + label { 
+    font-family: 'DM Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #8DFD1B;
+background: #222222;
+
+  } 
+  #tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { 
+    display: flex;
+    gap: 50px
+  } 
+  .inset { 
+    animation: scale 0.7s ease-in-out; 
+  } 
+  @keyframes scale { 
+    0% { 
+    transform: scale(0.9); 
+    opacity: 0; 
+    } 
+    50% { 
+    transform: scale(1.005); 
+    opacity: 0.5; 
+    } 
+    100% { 
+    transform: scale(1); 
+    opacity: 1; 
+    } 
+  }
     
     
 

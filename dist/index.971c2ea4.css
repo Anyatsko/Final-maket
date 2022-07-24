@@ -126,7 +126,7 @@ header .networks a {
 
 .wave {
   background-color: #000;
-  padding: 110px 0 120px;
+  padding: 120px 40px;
 }
 
 .wave .container {
@@ -265,6 +265,122 @@ header .networks a {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.story {
+  background-color: #000;
+  padding: 120px 40px;
+}
+
+.story .container {
+  min-height: 700px;
+}
+
+.story .container h2 {
+  text-transform: uppercase;
+  color: #a8a8a8;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: Audiowide, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.story .container h2 span {
+  color: #fff;
+}
+
+.story .container img {
+  height: 100%;
+}
+
+.story .container .definition {
+  color: #fff;
+  color: #8dfd1b;
+  border-left: 2px solid #8dfd1b;
+  margin-bottom: 32px;
+  padding-left: 12px;
+  font-family: DM Mono, monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.tabs {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.inset {
+  background: #222;
+  padding: 15px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 205px;
+}
+
+p {
+  color: #fff;
+  margin: 0 0 18px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+input {
+  display: none;
+}
+
+label {
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  padding: 15px 15px 25px;
+  display: block;
+}
+
+input:checked + label {
+  color: #8dfd1b;
+  background: #222;
+  font-family: DM Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
+  gap: 50px;
+  display: flex;
+}
+
+.inset {
+  animation: scale .7s ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  50% {
+    opacity: .5;
+    transform: scale(1.005);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

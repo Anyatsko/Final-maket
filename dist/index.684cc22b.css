@@ -113,4 +113,26 @@
   }
 }
 
+@media (max-width: 840px) {
+  .story .container {
+    min-height: 515px;
+  }
+
+  .story .container img {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .story .container {
+    min-height: 360px;
+  }
+
+  .story .container .inset {
+    max-height: 300px;
+    left: 140px;
+    overflow: scroll;
+  }
+}
+
 /*# sourceMappingURL=index.684cc22b.css.map */
