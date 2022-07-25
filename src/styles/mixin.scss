@@ -14,3 +14,13 @@
     line-height: 45px;
     text-transform: uppercase;
 }
+
+@mixin small-title {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8DFD1B;
+}

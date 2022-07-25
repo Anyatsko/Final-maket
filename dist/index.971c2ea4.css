@@ -532,7 +532,47 @@ input:checked + label {
 
 .roadmap .container .circle-3 {
   position: absolute;
-  transform: translate(-50%, 135%);
+  transform: translate(-50%, 125%);
+}
+
+.partners {
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 119px;
+}
+
+.partners .container {
+  max-width: 1160px;
+}
+
+.partners .container h3 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8dfd1b;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: DM Mono;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.partners .container .partners-name {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 85px;
+  display: flex;
+}
+
+.partners .container .partners-name p {
+  text-transform: uppercase;
+  color: #a8a8a8;
+  margin: 0;
+  font-family: Audiowide, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

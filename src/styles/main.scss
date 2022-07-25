@@ -370,6 +370,7 @@ background: #222222;
 
 .roadmap {
     background-color: black;
+    
         .container {
         max-width: 1160px;
         padding: 50px 0 120px 0;
@@ -383,9 +384,7 @@ background: #222222;
             color: #ffff;
             text-align: center;
             margin-bottom: 45px;            
-        }
-
-        
+        }     
 
         .roadmap-phase {
             border: 2px solid #8DFD1B;
@@ -412,14 +411,14 @@ background: #222222;
                 padding: 8px 12px;
             }
 
-             .before_second::before {
+                .before_second::before {
                 content:'2';
                 border: 1px solid #8DFD1B;
                 background: black;
                 color:#8DFD1B;
             }
 
-            .before_third::before {
+                .before_third::before {
                 content:'3';
                 border: 1px solid #8DFD1B;
                 background: black;
@@ -432,15 +431,9 @@ background: #222222;
                     padding-left: 20px;
 
                     h3 {
-                    font-family: 'DM Mono';
-                    font-weight: 400;
-                    font-size: 8px;
-                    line-height: 12px;
-                    letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: #8DFD1B;
+                    @include small-title;
                 }
-                .subtitle {
+                    .subtitle {
                     font-family: 'DM Mono';
                     font-weight: 400;
                     font-size: 16px;
@@ -448,7 +441,7 @@ background: #222222;
                     text-transform: uppercase;
                     color: #FFFFFF;
                 }
-                }
+            }
 
                 &-info{
                     display: flex;
@@ -475,8 +468,6 @@ background: #222222;
                         width: 129px;
                     }
                 }
-
-                
             }
             .separator {
                 background-color: #8DFD1B;
@@ -489,18 +480,46 @@ background: #222222;
                 top: -110px;
                 left: -110px
             }
-
-        .circle-2 {
+            .circle-2 {
             position: absolute;
             transform: translate(50%, 50%);
+            }
+            .circle-3 {
+            position: absolute;
+            transform: translate(-50%, 125%);
+        }
+    }
+}  
+
+.partners {
+    background-color:#000000;
+    padding-top: 60px;
+    padding-bottom: 119px;
+
+    .container {
+        max-width: 1160px;
+
+        h3 {
+            @include small-title;
+            text-align: center;
+            margin-bottom: 50px;
         }
 
-        .circle-3 {
-            position: absolute;
-            transform: translate(-50%, 135%);
+        .partners-name {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px 85px;
+            justify-content: center;
+
+            p {
+                @include title;
+                color: #A8A8A8;
+                margin: 0;
+            }
         }
-        }
-    }    
+    }
+
+}
     
 
     
