@@ -177,3 +177,37 @@
     }
 }
 }
+
+// questions
+
+@media all and (max-width: 900px) {
+    .questions {
+        .container {
+            gap: 20px;
+        }
+    }    
+}
+
+@media all and (max-width: 750px) {
+    .questions {
+        .container {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            img{
+                display: none;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 400px) {
+    .questions {
+        .container {
+            .square {
+                display: none;
+            }                 
+        }
+    }    
+}

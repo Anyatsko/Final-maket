@@ -135,4 +135,28 @@
   }
 }
 
+@media (max-width: 900px) {
+  .questions .container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .questions .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .questions .container img {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .questions .container .square {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=index.684cc22b.css.map */
