@@ -24,3 +24,8 @@
     text-transform: uppercase;
     color: #8DFD1B;
 }
+
+@mixin networks {
+    padding: 8px;
+    background-color: white;      
+}

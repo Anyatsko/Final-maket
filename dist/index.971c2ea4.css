@@ -400,7 +400,7 @@ input:checked + label {
   max-width: 1160px;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0 120px;
+  padding: 50px 0;
   display: flex;
   position: relative;
 }
@@ -640,6 +640,76 @@ input:checked + label {
   position: absolute;
   top: 5%;
   right: 5%;
+}
+
+.team {
+  background-color: #000;
+  padding: 120px 0 118px;
+}
+
+.team .container {
+  max-width: 1160px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  display: flex;
+}
+
+.team .container h2 {
+  display: none;
+}
+
+.team .container .party {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.team .container .party .party-biogr {
+  max-width: 240px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.team .container .party .party-biogr .name {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8dfd1b;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-family: DM Mono;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.team .container .party .party-biogr h3 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8dfd1b;
+  font-family: DM Mono;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.team .container .party .party-biogr .networks a {
+  background-color: #fff;
+  padding: 8px;
+}
+
+.team .container .party .party-biogr .descr {
+  color: #fff;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */
