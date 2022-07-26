@@ -113,14 +113,7 @@ header {
         }
 
         button {
-            font-family: 'DM Mono', monospace;
-            line-height: 16px;
-            font-size: 16px;
-            text-align: center;
-            color: #000000;
-            padding: 17px 40px;
-            background-color: #8DFD1B;
-            
+            @include green-btn;
         }
     }
 }
@@ -136,7 +129,7 @@ header {
         justify-content: space-between;  
         gap: 146px;
 
-        .wave-title{
+        .title{
             padding-top: 7px;
         }
         
@@ -636,6 +629,53 @@ background: #222222;
     }
 }
     
+// join 
+
+.join {
+    background-color:#000000;
+    padding: 120px 0 115px 0;
+
+    .container {
+        max-width: 1160px;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+
+         .title {
+            max-width: 345px;
+
+            h2{
+                @include title;
+                color: #ffff;
+                margin-bottom: 35px;
+                    span {
+                        color:#8DFD1B;
+                        }                          
+                }
+                .subtitle {
+                    margin-bottom: 35px;
+            }
+
+            button {
+                @include green-btn;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+
+                p{
+                    margin: 0;
+                    color: #000000;
+                }
+            }
+             }
+
+
+        }
+
+
+    }
+
     
 
 
