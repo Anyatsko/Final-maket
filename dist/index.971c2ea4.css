@@ -766,4 +766,59 @@ input:checked + label {
   margin: 0;
 }
 
+footer {
+  background-color: #42006a;
+  padding: 100px 0 120px;
+}
+
+footer .container {
+  max-width: 1160px;
+  gap: 100px;
+  display: flex;
+}
+
+footer .container img {
+  margin-bottom: 90px;
+}
+
+footer .container p, footer .container a {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8dfd1b;
+  color: #fff;
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-family: DM Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+footer .container .links {
+  gap: 100px;
+  display: flex;
+}
+
+footer .container .links-main, footer .container .links-additional {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+}
+
+footer .container .networks {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+footer .container .networks a {
+  background-color: #fff;
+  margin: 0;
+  padding: 8px;
+}
+
+footer .container .networks a img {
+  margin: 0;
+}
+
 /*# sourceMappingURL=index.971c2ea4.css.map */
