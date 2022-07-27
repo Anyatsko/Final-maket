@@ -1,4 +1,75 @@
 @import "https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap";
+.logo__name:hover, .logo__name:hover span {
+  color: #8dfd1b;
+  cursor: pointer;
+  transition: 0, 2s;
+}
+
+.logo nav a:hover {
+  color: #8dfd1b;
+}
+
+.networks a:hover {
+  background-color: #8dfd1b;
+}
+
+.promo .container .promo-info button:hover {
+  color: #8dfd1b;
+  background-color: #000;
+  border: 2px solid #8dfd1b;
+}
+
+.promo .container .promo-cards .cards:nth-child(2n+1):hover {
+  filter: opacity(1.6);
+  width: 266px;
+  height: 360px;
+  transform: scale(1.5);
+}
+
+.promo .container .promo-cards .cards:nth-child(2n+1):hover ~ .cards_purpule {
+  filter: opacity(.6);
+  z-index: 1;
+  transform: scale(1);
+}
+
+.wave .container .wave-info button:hover {
+  color: #000;
+  background-color: #8dfd1b;
+}
+
+.join .container .title button:hover {
+  background-color: #000;
+  border: 2px solid #8dfd1b;
+  margin-top: -10px;
+}
+
+.join .container .title button:hover p {
+  color: #8dfd1b;
+}
+
+.join .container .title button:hover img {
+  background-color: #fff;
+  padding: 8px;
+}
+
+.team .container .party .party-biogr .networks a:hover {
+  background-color: #8dfd1b;
+}
+
+footer .container .footer-logo .logo__name:hover, footer .container .footer-logo .logo__name:hover span {
+  color: #8dfd1b;
+  cursor: pointer;
+  transition: 0, 2s;
+}
+
+footer .container .links a:hover {
+  color: #8dfd1b;
+}
+
+footer .container .networks a:hover {
+  background-color: #8dfd1b;
+}
+
 html {
   width: 100%;
   max-width: 100%;
@@ -34,13 +105,35 @@ header .logo {
   display: flex;
 }
 
-header nav {
+header .logo__name {
+  color: #fff;
+  margin: 0 10px 0 0;
+  font-family: Audiowide, sans-serif;
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 61px;
+  position: relative;
+}
+
+header .logo__name span {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Audiowide, sans-serif;
+  font-size: 20px;
+  line-height: 61px;
+  position: absolute;
+  top: -15px;
+}
+
+nav {
   align-items: center;
   gap: 40px;
   display: flex;
 }
 
-header nav a {
+nav a {
   color: #fff;
   font-family: DM Mono, monospace;
   font-size: 16px;
@@ -50,22 +143,27 @@ header nav a {
   text-decoration: none;
 }
 
-header nav a:first-child {
+nav a:first-child {
   white-space: nowrap;
 }
 
-header .networks {
+.networks {
+  align-items: center;
   gap: 12px;
   display: flex;
 }
 
-header .networks a {
+.networks a {
   background-color: #fff;
   padding: 8px;
 }
 
 .promo {
   background-color: #000;
+}
+
+.promo-info {
+  padding: 20px;
 }
 
 .promo .container {
@@ -390,6 +488,7 @@ input:checked + label {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .roadmap {
@@ -750,6 +849,7 @@ input:checked + label {
 .join .container .title button {
   text-align: center;
   color: #000;
+  box-sizing: border-box;
   background-color: #8dfd1b;
   justify-content: center;
   align-items: center;
@@ -773,12 +873,37 @@ footer {
 
 footer .container {
   max-width: 1160px;
-  gap: 100px;
+  flex-wrap: wrap;
+  gap: 85px;
   display: flex;
 }
 
-footer .container img {
-  margin-bottom: 90px;
+footer .container .footer-logo {
+  flex-direction: column;
+  display: flex;
+}
+
+footer .container .footer-logo .logo__name {
+  color: #fff;
+  margin-bottom: 50px;
+  font-family: Audiowide, sans-serif;
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-decoration: none;
+  position: relative;
+}
+
+footer .container .footer-logo .logo__name span {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Audiowide, sans-serif;
+  font-size: 20px;
+  line-height: 61px;
+  position: absolute;
+  top: -15px;
 }
 
 footer .container p, footer .container a {

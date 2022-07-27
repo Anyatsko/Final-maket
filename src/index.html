@@ -12,12 +12,14 @@
    <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <div class="logo"><img src="./img/logo.svg" alt="logo">
+            <div class="logo">
+               
+                <p class="logo__name">Meta<span>rl</span></p>
                 <nav>
-                    <a href="">Wave NFTs</a>
-                    <a href="">Stories</a>
+                    <a href="#wave">Wave NFTs</a>
+                    <a href="#story">Stories</a>
                     <a href="">Contact</a>
                 </nav>
             </div>
@@ -48,7 +50,7 @@
         </div>
     </section>
 
-    <section class="wave">
+    <section class="wave" id="wave">
         <div class="container">
             <div class="wave-title">
                 <h2>wave NFT</h2>
@@ -107,7 +109,7 @@
         </div>
     </section>
 
-    <section class="story">
+    <section class="story" id="story">
         <div class="container">
             <h2><span>MRL.</span>the story.</h2>
             <div class="tabs"> 
@@ -316,15 +318,15 @@
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="./img/logo.svg" alt="logo">
+                <a href="#header" class="logo__name">Meta<span>rl</span></a>
                 <p>©2022 All rights reserved</p>
             </div>
 
             <div class="links">
                 <div class="links-main">
-                    <a href="">Wave NFTs</a>
-                    <a href="">Stories</a>
-                    <a href="">Contact</a>                
+                    <a href="#wave">Wave NFTs</a>
+                    <a href="#story">Stories</a>
+                    <a href="#header">Contact</a>                
                 </div>
     
                 <div class="links-additional">
@@ -346,6 +348,7 @@
                 <a href="#"><img src="./img/telegram.svg" alt="telegram"></a>                
             </div>
         </div>
+       
     </footer>
     
    

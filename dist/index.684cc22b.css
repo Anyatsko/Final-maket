@@ -5,8 +5,13 @@
 }
 
 @media (max-width: 650px) {
-  header .container, header .logo {
+  header .container {
     justify-content: center;
+  }
+
+  header .logo {
+    justify-content: center;
+    gap: 62px;
   }
 
   header .networks {
@@ -29,6 +34,7 @@
   .promo .container {
     flex-direction: column;
     align-items: center;
+    padding: 50px 0;
   }
 
   .promo .container .promo-info {
@@ -124,6 +130,10 @@
 }
 
 @media (max-width: 660px) {
+  .story {
+    padding: 55px 10px 95px;
+  }
+
   .story .container {
     min-height: 360px;
   }
@@ -132,6 +142,24 @@
     max-height: 300px;
     left: 140px;
     overflow: scroll;
+  }
+}
+
+@media (max-width: 445px) {
+  .roadmap-phase {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 10px;
+    display: flex;
+  }
+
+  .roadmap-phase__before {
+    width: 93%;
+  }
+
+  .roadmap-phase-info img {
+    display: none;
   }
 }
 
@@ -218,6 +246,45 @@
 
   .join .card {
     display: none;
+  }
+}
+
+@media (max-width: 1160px) {
+  footer .container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  footer .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+
+  footer .container .footer-logo {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  footer .container .footer-logo .logo__name {
+    margin-bottom: 20px;
+  }
+
+  footer .container .footer-logo p {
+    margin: 0;
+  }
+
+  footer .container .links {
+    order: 2;
+  }
+
+  footer .container .links-authors {
+    flex-direction: column;
+    order: 1;
+    align-items: center;
+    display: flex;
   }
 }
 

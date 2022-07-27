@@ -1,0 +1,141 @@
+.logo {
+    
+    &__name:hover {
+        color: #8DFD1B;
+        cursor: pointer;
+        transition: 0,2s;
+
+        span {
+            color: #8DFD1B;
+        cursor: pointer;
+        transition: 0,2s;
+        }
+    }
+    nav{
+        a:hover {
+            color:#8DFD1B;
+        }
+    }
+    
+    }
+    .networks {
+        a:hover {
+            background-color:#8DFD1B;
+        }
+    
+}
+
+// hover for cards from section logo
+
+ 
+
+.promo {
+    .container {
+        .promo-info {
+            button:hover {
+                background-color: #000;
+                color:#8DFD1B;
+                border: 2px solid #8DFD1B;
+            }
+        }     
+
+         .promo-cards {
+            & .cards:nth-child(odd):hover {
+                transform: scale(1.5);
+                filter: opacity(1.6);
+                width: 266px;
+                transform: scale(1.5);    
+                height: 360px;     
+                
+                
+            }
+            
+            & .cards:nth-child(odd):hover ~ .cards_purpule{
+                filter: opacity(0.6);
+                z-index: 1;
+                transform: scale(1);
+                
+            }
+         } 
+ }
+}
+
+
+.wave {
+    .container {
+        .wave-info{
+            button:hover {
+                background-color:#8DFD1B;
+                color: #000;
+            }
+        }
+    }
+}
+
+.join {
+    .container {
+        .title {
+            button:hover{
+                background-color:#000;
+                border: 2px solid #8DFD1B;
+                margin-top: -10px;
+
+                p{
+                    color:#8DFD1B;
+                }
+                img{
+                    background-color:#ffff;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.team {
+    .container {
+        .party{  
+            .party-biogr{ 
+            .networks {
+            & a:hover {
+                background-color:#8DFD1B;
+            }
+        }
+    }
+}
+}
+}
+
+footer {
+    .container { 
+        .footer-logo{
+            .logo__name:hover {
+                color: #8DFD1B;
+                cursor: pointer;
+                transition: 0,2s;
+        
+                span {
+                    color: #8DFD1B;
+                cursor: pointer;
+                transition: 0,2s;
+                }
+        }
+        
+        }
+        .links {
+            & a:hover {
+                color:#8DFD1B;
+            }
+        }
+    .networks{ 
+    & a:hover {
+        background-color:#8DFD1B;
+    }
+}
+}
+}
