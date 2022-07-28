@@ -30,6 +30,7 @@
  
 
 .promo {
+
     .container {
         .promo-info {
             button:hover {
@@ -45,8 +46,7 @@
                 filter: opacity(1.6);
                 width: 266px;
                 transform: scale(1.5);    
-                height: 360px;     
-                
+                height: 360px;                    
                 
             }
             
@@ -56,6 +56,8 @@
                 transform: scale(1);
                 
             }
+
+        
          } 
  }
 }

@@ -4,6 +4,7 @@
     header{
         .container{
             gap: 20px;
+            justify-content: space-around;
         }
         .logo {
             gap: 20px;
@@ -183,6 +184,44 @@
 }
 }
 
+@media all and (max-width: 320px) {
+    .story {
+        padding: 55px 10px 95px;
+        .container {
+            min-height: 360px;
+            
+        
+            .definition {
+               
+                    font-family: 'DM Mono', monospace;
+                    font-size: 18px;
+                    line-height: 32px;            
+                    color: #8DFD1B;
+                    border-left: 2px solid #8DFD1B ;
+                    padding-left: 12px;
+                    margin-bottom: 32px;
+            }       
+    }
+}
+}
+
+
+@media all and (max-width: 320px) {
+    .story {
+        padding: 55px 10px 95px;
+        .container {
+            min-height: 425px;
+            
+        
+        .inset {
+            max-height: 300px;
+             overflow: scroll;
+             left: 140px;
+        }            
+    }
+}
+}
+
 // roadmap
 
 @media all and (max-width: 445px) {
@@ -209,6 +248,8 @@
         }
     }
 }
+
+
 
 
 // questions

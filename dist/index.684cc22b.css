@@ -1,5 +1,10 @@
 @media (max-width: 768px) {
-  header .container, header .logo {
+  header .container {
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  header .logo {
     gap: 20px;
   }
 }
@@ -136,6 +141,40 @@
 
   .story .container {
     min-height: 360px;
+  }
+
+  .story .container .inset {
+    max-height: 300px;
+    left: 140px;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 320px) {
+  .story {
+    padding: 55px 10px 95px;
+  }
+
+  .story .container {
+    min-height: 360px;
+  }
+
+  .story .container .definition {
+    color: #8dfd1b;
+    border-left: 2px solid #8dfd1b;
+    margin-bottom: 32px;
+    padding-left: 12px;
+    font-family: DM Mono, monospace;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .story {
+    padding: 55px 10px 95px;
+  }
+
+  .story .container {
+    min-height: 425px;
   }
 
   .story .container .inset {
